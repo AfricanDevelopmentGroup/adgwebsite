@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="agdicon.png"/>
+
+<div class="title">
+  <a href="#">
+  <img class="homeimage" src="adgicon.png" alt="ADGicon" width="230" height="230"></a>
+ <h1 style=font-size:50px>AFRICAN DEVELOPMENT GROUP</h1>
+ <h5 style=font-size:35px>WHAT WE DO<h5>
+</div>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="adg.css">
+
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  padding: 30px,30px,30px,30px;
+  position: fixed;
+  marging:200px,200px,200px,200px;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #011f4b;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.33%;
+}
+
+.tablink:hover {
+  background-color: #3b6e99;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 200px,200px,200px,200px;
+  height: 100%;
+  line-height:2;
+  word-spacing: 20px;
+}
+
+#News {background-color: #011f4b;}
+#Contact {background-color: #011f4b;}
+#About {background-color: #011f4b;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('News', this, '#3b6e99')" id="defaultOpen">ENGAGEMENT</button>
+<button class="tablink" onclick="openPage('Contact', this, '#3b6e99')">FORUMS</button>
+<button class="tablink" onclick="openPage('About', this, '#3b6e99')">PR</button>
+
+
+<div id="Home" class="tabcontent">
+  <h3>HOME</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>The active participation of stakeholders in implementing solutions guarantees 
+	sustained growth. ADG works with affiliates on the African continent and in the diaspora 
+	to strengthen their direct or indirect contribution to the continent’s development.</h3> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>The exchange of transformative ideas ensures a holistic 
+	solution. Through speaker series, panel discussions and seminars, 
+	ADG encourages discussions within the Columbia community on African development and progress.</h3>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>Our PR team is about getting more people involved in ADG,
+	 actionable take aways, highlighting students who do things on campus.The 
+	 secret behind every intelligent solution is extensive research. ADG engages 
+	 research oriented individuals both on the African continent and of the African 
+	 Diaspora, and challenges them to channel their efforts into data collection and analysis.</h3>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 

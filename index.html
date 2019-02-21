@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+
+<!--START OF HEAD-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!--END OF HEAD-->
+
+
+<!--START OF BODY-->
+
+<body>
+
+<link rel="icon" href="agdicon.png"/>
+<link rel="stylesheet" type="text/css" href="adg.css">
+
+
+<div class="title">
+  <img class="homeimage" src="adgicon.png" alt="ADGicon" width="230" height="250">
+ <h1 style=font-size:50px>AFRICAN DEVELOPMENT GROUP</h1>
+ <h5 style=font-size:25px> Columbia University In The City of New York<h5>
+</div>
+
+<button class="tablink" onClick="parent.location='#home'">HOME </button>
+<button class="tablink" onClick="parent.location='aboutadg.html'">ABOUT ADG</button>
+<button class="tablink" onClick="parent.location='adgteam.html'">OUR TEAM</button>
+<button class="tablink" onClick="parent.location='adgevents.html'">EVENTS</button>
+<button class="tablink" onClick="parent.location='mailto:adg.columbia@gmail.com?'">CONTACT US</button>
+
+
+<div><img src="greetings.gif" style="width:800px;height:400px; padding: 30px"></div>
+
+<!--START OF INTRO-->
+<div><h1><a class="home";>What is ADG?</a></h1></div>
+
+<div class="home"> <a name="Home"></a> 
+<p>The African Development Group of Columbia University, hereafter referred to as ADG, was established with a mission to reverse brain drain by promoting a deeper engagement of the African Diaspora in African development through research, initiative, and service. 
+We aim to achieve this through the bedrock of our three pillars – Research & Analysis, Forums,
+ and Engagement. We are committed to serving the African continent, and we believe that effective contribution 
+ from the educated, passionate and ambitious intellectuals in the diaspora and within Africa, would bring the
+  change and progress that we seek. The ADG is prepared to take on this new challenge; advancing the spirit of
+   responsibility and intellectual curiosity on the topic of African development in our community.
+</p>
+</div>
+<!--END OF INTRO-->
+
+<!-- START OF VISION AND MISSION -->
+<div>
+<div class="row">
+  <div class="column">
+    <h2>Our Mission</h2>
+    <p>To foster partnership and collaboration between members of the African Diaspora and those on the continent through research, initiative and service towards the goal of Africa’s sustainable development​</p>
+  </div>
+
+  <div class="column">
+    <h2>Our Vision</h2>
+    <p>A developed Africa whose educated professionals actively participate in its sustainable development</p>
+  </div>
+</div>
+
+<!-- END OF VISION AND MISSION STATEMENTS-->
+
+<!-- START OF IMAGES -->
+<div class="slideshow-container">
+<div class="mySlides fade">
+ 
+  <img src="image1.png" style="width:800px;height:500px;">
+  <div class="text">ADG Team with Nigerian Musician Mr. Eazi</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="image3.png" style="width:800px;height:500px;">
+  <div class="text">Sangu Delle poses with the founders of ADG</div>
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="image5.png" style="width:800px;height:500px;">
+  <div class="text">Sangu Delle with some members of ADG</div>
+</div>
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+<!-- END OF IMAGES -->
+
+<!-- SUBSCRIBE BUTTON -->
+<div class="Subscribe"><a href ="file:///Users/cynthiajuma/Desktop/Coding%20Projects/ADG/signupforadg.html">Subscribe to
+ Our Newletters</a></div>
+
+<!--END OF BODY-->
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

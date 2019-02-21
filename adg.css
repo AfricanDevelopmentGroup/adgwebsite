@@ -1,0 +1,151 @@
+html {
+    height: 100%;
+    font-family:"Helvetica", "Verdana", "Arial", sans-serif;
+    color:white;
+    font-size: 28px;
+    background: white;
+    margin:0;
+
+}
+body{
+	background-color:white;
+  padding: 10px 50px 50px 50px;
+  height: 100%;
+  margin:0;
+}
+
+.title{
+	color: white;
+	text-align:center;
+  background-color: #3b6e99;
+  padding: 0px;
+  overflow: auto;
+}
+.home{
+  -webkit-column-count: 2;
+  padding:0px 50px 50px 50px;
+  
+}
+.homeimage{
+  float: left;
+  
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #011f4b;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+  width: 20%;
+  height: 10%;
+}
+.tablink:hover {
+  background-color: #3b6e99;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+div{
+	text-align: center;
+	color:black;
+	
+}
+figcaption{
+  padding: 30px;
+}
+ul{
+	text-align: center;
+}
+
+span{
+	text-align: center;
+}
+.Subscribe{
+	padding: 30px;
+}
+
+/*COLUMNS*/
+.column {
+    float: left;
+    width: 45%;
+    padding: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*SLIDESHOW*/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif; font-size: 20px}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 100px 0px 40px 0px;
+}
+
+/* Caption text */
+.text {
+  color:black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 500px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

@@ -1,0 +1,28 @@
+
+<!-- START OF IMAGES -->
+<div class="slideshow-container">
+<div class="mySlides fade">
+ 
+  <img src="image1.png" style="width:800px;height:500px;">
+  <div class="text">ADG Team with Nigerian Musician Mr. Eazi</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="image3.png" style="width:800px;height:500px;">
+  <div class="text">Sangu Delle poses with the founders of ADG</div>
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="image5.png" style="width:800px;height:500px;">
+  <div class="text">Sangu Delle with some members of ADG</div>
+</div>
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
